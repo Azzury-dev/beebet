@@ -1,158 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Radio+Canada+Big:wght@600&family=Varela+Round&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Radio Canada Big", sans-serif;
 }
-
 body {
     background-color: #181B2A;
+}
+body,.navbar-center a, #login-button, .refill-button, .logout-button, .login-box input[type="text"], .login-box button, h1, button[type="submit"] {
     color: white;
 }
-
-.navbar {
-    background-color: #222533;
+.navbar, .navbar-left, .navbar-profile, .navbar-center, .navbar-center a, .navbar-center .online-player, .navbar-profile, .profile-section {
     display: flex;
+}
+.navbar-left, .navbar-profile, .navbar, .navbar-center, .navbar-center a, .navbar-center .online-player, .navbar-profile, .profile-section {
     align-items: center;
+}
+.login-box button:hover, button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+.navbar, .login-box input[type="text"], .login-box button {
     padding: 10px;
-    position: relative;
 }
-
-.navbar-left, .navbar-profile {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-left img {
-    height: 60px;
+.navbar-left img, .navbar-center .online-player, .coins {
     margin-right: 20px;
 }
-
+.navbar-center a, #login-button, .navbar-profile button, .refill-button, .logout-button {
+    font-size: 14px;
+}
+button[type="submit"], .login-box input[type="text"], .login-box button {
+    font-size: 16px;
+}
+button[type="submit"]:hover,.login-box button, .logout-button, .refill-button, .profile-picture, .navbar-profile button, #login-button {
+    cursor: pointer;
+}
+.navbar-center .online-player, button[type="submit"], .login-box button, .login-box input[type="text"],.logout-button, .refill-button, .navbar-profile button, #login-button {
+    border-radius: 5px;
+}
+#login-button, .refill-button, .logout-button, .navbar-profile button {
+    font-weight: bold;
+}
+.login-box input[type="text"], .login-box button, .blur-background {
+    width: 100%;
+}
+h1,.login-box input[type="text"] {
+    margin-bottom: 20px;
+}
+.navbar-center .online-player, .logout-button {
+    padding: 5px 10px;
+}
+.navbar-profile button, .refill-button{
+    padding: 8px 15px;
+}
+.profile-picture, .logout-button {
+    margin-right: 10px;
+}
+#login-button, .login-box button {
+    background-color: #3498db;
+    padding: 8px 15px;
+}
+#login-button, .login-box button, .navbar-profile button, .refill-button, .logout-button, .navbar-center .online-player, .navbar-center a, .navbar-profile button, .navbar-center .online-player, .navbar-center a, .navbar-profile button, .profile-section, .navbar-center .online-player, .navbar-center a, .navbar-profile button, .navbar-center .online-player, .navbar-center a, .navbar-profile button, .profile-section {
+    transition: background-color 0.3s;
+}
+.navbar {
+    background-color: #222533;
+    position: relative;
+}
+.navbar-left img {
+    height: 60px;
+}
 .navbar-center {
     flex-grow: 1;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 .navbar-center a {
-    color: white;
     text-decoration: none;
     margin-right: 15px;
     font-weight: 500;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
 }
-
 .navbar-center a:hover {
     color: #f39c12;
 }
-
 .navbar-center .online-player {
-    display: flex;
-    align-items: center;
     background-color: #33374a;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 20px;
     color: #82e0aa;
 }
-
 .navbar-center .online-player img {
     margin-right: 5px;
     height: 16px;
 }
-
-.navbar-profile {
-    display: flex;
-    align-items: center;
+.login-box, .navbar-profile {
     position: absolute;
+}
+.navbar-profile{
     right: 10px;
 }
-
-#login-button {
-    background-color: #3498db;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.navbar-profile .coins {
+.coins {
     color: #f1c40f;
-    margin-right: 20px;
 }
-
-.navbar-profile button {
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-}
-
 .navbar-profile .refill-button:hover {
     background-color: #2ecc71;
 }
-
-
-.profile-section {
-    display: flex;
-    align-items: center;
-}
-
 .profile-picture {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    margin-right: 10px;
-    cursor: pointer;
 }
-
-.coins {
-    color: #f1c40f;
-    margin-right: 20px;
-}
-
 .refill-button {
     background-color: #27ae60;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    transition: background-color 0.3s;
 }
-
 .logout-button {
     background-color: #ff4c4c; 
-    color: white;
-    border: none; 
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer; 
-    font-size: 14px; 
-    margin-right: 10px;
-    transition: background-color 0.3s;
 }
-
 .logout-button:hover {
     background-color: #ff1a1a;
 }
-
 .login-box {
     width: 700px;
     height: 400px;
-    position: absolute;
     z-index: 25;
     left: 50%;
     top: 50%;
@@ -160,60 +125,22 @@ body {
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 1%;
     background-color: #2e2e2e;
-    opacity: 1;
     transform: translateY(0);
     transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
     padding: 40px;
     box-sizing: border-box;
 }
-
-.login-box h1 {
+h1 {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 20px;
-    color: #fff;
 }
-
 .login-box input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
     background-color: #444;
-    color: white;
-    font-size: 16px;
 }
-
 .login-box input[type="text"]::placeholder {
     color: #bbb;
 }
-
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3498db;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login-box button:hover {
-    background-color: #2980b9;
-}
-
-.hidden {
-    opacity: 0;
-    transform: translateY(-100px);
-    pointer-events: none;
-}
-
 .blur-background {
-    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -222,41 +149,20 @@ body {
     background: rgba(34, 34, 34, 0.85);
     z-index: 24;
     visibility: visible;
-    opacity: 1;
     transition: backdrop-filter 0.25s ease-in-out;
     pointer-events: all;
     
 }
-
-.blur-background--hidden {
-    backdrop-filter: blur(0px);
-    background: rgba(0, 0, 0, 0);
-    z-index: 0;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-
 h2 {
     text-align: center;
     font-size: 24px;
     color: #2c3e50;
 }
-
-
-
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
 }
-
-button[type="submit"]:hover {
-    background-color: #2980b9;
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
-
-
